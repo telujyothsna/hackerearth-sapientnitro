@@ -1,0 +1,31 @@
+<div id="sidedrawer" class="mui--no-user-select">
+  <div id="brand" class="mui--appbar-line-height">
+    <img src="/assets/images/sapient-logo.svg" alt="" class="logo">
+    <span class="cart-icon">
+      <i class="fa fa-shopping-bag fa-4x"></i>
+      <i class="fa fa-shopping-cart fa-4x"></i>
+    </span>
+  </div>
+  
+
+  <div class="mui-divider"></div>
+  <div class="filter-section">
+
+    <div md="12" class="filter-head">
+      Tags
+    </div>
+    <ul class="mui-list--unstyled tags-list">
+      <li ng-repeat="tag in ctrl.tags">
+        
+        <span class="filter-item">
+          <label><input type="checkbox" ng-checked="ctrl.selectedtags[tag].selected" ng-click="ctrl.toggleTags(tag)"> {{tag}}</label>
+        </span>
+        <span class="filter-item-count">
+          ({{ctrl.selectedtags[tag].count}})
+        </span>
+        
+      </li>
+    </ul>
+  </div>
+  <footerbar></footerbar>
+</div>

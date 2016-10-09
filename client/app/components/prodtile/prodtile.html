@@ -1,0 +1,20 @@
+<div class="card" ng-click="handleTileClick(ctrl.item.link)">
+  <span class="provider">
+    <providericon name="ctrl.item.provider"></providericon>
+  </span>
+  <div class="img-holder">
+    <img ng-src="{{ctrl.item.image}}" alt="" class="prod-image">
+  </div>
+  <ratingstar rating="ctrl.item.rating"></ratingstar>
+  <div class="prod-meta">
+    <div class="prod-name">{{ctrl.item.name}}</div>
+  </div>
+  <div class="prod-price">Rs. {{ctrl.item.price | number}}</div> 
+  <div class="sold">
+    <span class="value">{{ctrl.item.purchased_by | number}}</span>
+    <span class="label"> buyers</span>
+  </div> 
+  <div class="card-footer">
+    <span class="tag" ng-repeat="tag in ctrl.item.tags" ng-class="{ 'selected' : ctrl.selectedtags[tag].selected }">{{tag}}</span>
+  </div>
+</div>

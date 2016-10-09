@@ -1,0 +1,10 @@
+<div class="productlist">
+  <mui-row>
+    <mui-col md="12">
+      <h5 class="list-title">Trending deals</h5>
+    </mui-col>
+  </mui-row>
+  <mui-row class="tiles-holder">
+      <prodtile item="item" ng-repeat="item in ctrl.items" ng-if="ctrl.checkTags(item)" class="mui-col-md-4 mui-col-md-6 mui-col-xs-12 card-tile" selectedtags="ctrl.selectedtags"></prodtile>
+  </mui-row>
+</div>

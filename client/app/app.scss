@@ -1,0 +1,41 @@
+@import '~muicss/lib/sass/mui';
+@import "~muicss/lib/sass/mui/colors";
+
+$fa-font-path: '/assets/fonts/font-awesome/';
+@import '~font-awesome/scss/font-awesome';
+@import 'variables';
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,900|Roboto:300,500,700,900);
+
+/**
+ * App-wide Styles
+ */
+body{
+  background: url('/assets/images/binding_dark.png') 0 0;
+}
+
+#app-content{
+  @media screen and (min-width: 768px) {
+    margin-left: $sidebar-width;
+  }  
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+
+// Component styles are injected through gulp
+/* inject:scss */
+@import 'variables';
+@import 'components/prodtile/prodtile';
+@import 'components/productlist/productlist';
+@import 'components/providericon/providericon';
+@import 'components/ratingstar/ratingstar';
+@import 'components/sidedrawer/sidedrawer';
+@import 'main/main';
+@import '../components/footerbar/footerbar';
+@import '../components/navbar/navbar';
+/* endinject */

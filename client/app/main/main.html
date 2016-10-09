@@ -1,0 +1,5 @@
+<sidedrawer tags="ctrl.tags" selectedtags="ctrl.selectedTags" ng-class="{'hide-sidedrawer' : ctrl.isSideBarCollapsed}"></sidedrawer>
+<navbar id="app-header" is-side-bar-collapsed="ctrl.isSideBarCollapsed"></navbar>
+<mui-container fluid class="app-data" ng-class="{'hide-sidedrawer' : ctrl.isSideBarCollapsed}">
+  <productlist items="ctrl.deals" selectedtags="ctrl.selectedTags"></productlist>
+</mui-container>

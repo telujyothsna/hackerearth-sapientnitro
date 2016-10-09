@@ -1,0 +1,54 @@
+#sidedrawer{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  left: -200px;
+  overflow: auto;
+  z-index: 2;
+  transition: transform 0.2s;
+  background: url('/assets/images/clean_textile.png');
+
+  @media screen and (min-width:$mui-screen-md-min){
+    transform: translate(200px);
+  }
+
+  #brand{
+    position: relative;
+  }
+
+  .logo{
+    width: 128px;
+    height: 128px;
+  }
+
+  .cart-icon{
+    position: absolute;
+    bottom: -5px;
+    text-shadow: 0 1px 1px #666;
+    text-align: center;
+    line-height: 40px;
+    color: #333;
+  }
+
+  .filter-section{
+    margin: 10px 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #bbb;
+  }
+
+  .filter-head{
+    font-weight: bold;
+    font-family: 'Roboto';
+  }
+
+  .filter-item{
+    margin: 5px 0;
+    text-transform: capitalize;
+  }
+
+  .filter-item-count{
+    color: #888;
+    font-size: smaller;
+  }
+}

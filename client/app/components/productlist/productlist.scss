@@ -1,6 +1,6 @@
 .productlist{
   background:  darken($white, 2%);;
-  padding: 15px;
+  padding: 30px 15px;
 
   .list-title{
     font-family: 'Open Sans';
@@ -9,12 +9,12 @@
     color: lighten($black, 10%);
     padding-bottom: 15px;
     border-bottom: 1px solid lighten($black, 50%);
-    margin-bottom: 15px;
+    margin: 0 30px;
   }
 
   .tiles-holder{
     max-width: 800px;
-    margin: 15px 15px ;
+    margin: 10px 15px ;
     overflow: hidden;
   }
 }
